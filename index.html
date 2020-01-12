@@ -23,9 +23,16 @@
             <meta charset="UTF-8">
             <link href="img/css/main.css" type="text/css" rel="stylesheet">
             <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
-            <script>
-                document.addEventListener('DOMContentLoaded',()=>{const arrow=document.querySelector('[href="#down"]');arrow.addEventListener('click',(e)=>{e.preventDefault();const target=document.getElementById('down');const targetY=target.getBoundingClientRect().y;const step=(targetY-window.scrollY)/20;const scroll=()=>{window.scroll(0,window.scrollY+step)if(window.scrollY<targetY){requestAnimationFrame(scroll)}}requestAnimationFrame(scroll)})})
-            </script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#down").on("click",".arrow", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script type="text/javascript">
                 $(window).on('load',function(){var $preloader=$('#p_prldr'),$svg_anm=$preloader.find('.svg_anm');$svg_anm.fadeOut();$preloader.delay(500).fadeOut('slow')});
