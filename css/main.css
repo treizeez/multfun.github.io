@@ -1,0 +1,363 @@
+@font-face {
+    font-family: Golos;
+    src: url(../fonts/Golos.ttf);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+  }
+html{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body{
+    background: #5f27cd;
+    margin: 0;
+    padding: 0;
+    right: 0;
+}
+#p_prldr{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #5f27cd;
+    z-index: 3000;
+}
+.contpre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.prldrlogo{
+    width: 600px;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+h1{
+    font: 45px Golos;
+    color: #fff;
+}
+h2{
+    font: 17px Arial;
+    color: #fff;
+}
+h3{
+    font: 35px Golos;
+    color: #fff;
+}
+.header{
+    position: relative;
+    background: #5f27cd;
+    z-index: 999;
+    width: 100%;
+    height: 200px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.3);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.3);
+}
+.underheader{
+    position: fixed;
+    z-index: 998;
+    background: #44189c;
+    width: 100%;
+    height: 150px;
+    margin-top: -220px;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.logounder{
+    width: 400px;
+    margin: 10px;
+    margin-top: -35px;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.logounder:hover{
+    transform: scale(0.9, 0.9);
+}
+.logo{
+    width: 500px;
+    margin-top: -40px;
+    opacity: 1;
+}
+.logo:after{
+    opacity: 0;
+}
+.cartoonblock{
+    overflow-x:hidden;
+    display: inline-block;
+    text-align: center;
+    background: #44189c;
+    border-radius: 50px;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    opacity: 1;
+    margin-top: 50px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.cartoonblock:hover{
+    transform: scale(0.9, 0.9);
+}
+.article{
+    font: 90px Golos;
+    margin-top: 80px;
+    background-image: url(../img/articlebackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.article2{
+    font: 90px Golos;
+    margin-top: 80px;
+    background-image: url(../img/articlebackground2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.amenu{
+    font: 70px Golos;
+    float: right;
+    margin: 20px;
+    margin-top: 35px;
+    background: #5f27cd;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.amenu:hover{
+    transform: scale(0.9, 0.9);
+}
+.menu{
+    position: fixed;
+    z-index: 1100;
+    background: #5f27cd;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 210%;
+    opacity: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.menu:target{
+    left: 110%;
+    opacity: 1;
+}
+.background{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: -10%;
+}
+.menuin{
+    z-index: 2000;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background: #5f27cd;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.menulink{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    font: 40px Golos;
+    color: #fff;
+    background: #44189c;
+    max-width: 500px;
+    min-width: 0px;
+    padding: 20px;
+    border-radius: 50px;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+}
+.menulink:hover{
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: -80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #5f27cd;
+    z-index: 2300;
+}
+.back:target{
+    opacity: 1;
+    top: 50%;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.text1{
+    position: absolute;
+    display: block;
+    max-width: 800px;
+    min-width: 0px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+.h1text{
+    font: 25px Arial;
+}
+.h1art{
+    font: 90px Golos;
+}
+.socialicon{
+    width: 30px;
+    margin: 10px;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.socialicon:hover{
+    transform: scale(1.2, 1.2);
+}
+.social{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1140px) {
+    h1{
+        font: 30px Golos;
+    }
+    h3{
+        font: 30px Golos;
+    }
+    .logo{
+        width: 300px;
+        margin-top: -10px;
+    }
+    .header{
+        height: 150px;
+    }
+    .underheader{
+        margin-top: -151px;
+        height: 100px;
+    }
+    .logounder{
+        width: 250px;
+        margin-top: -20px;
+    }
+    .article{
+        width: 95%;
+        font: 35px Golos;
+    }
+    .article2{
+        width: 95%;
+        font: 35px Golos;
+    }
+    .amenu{
+        font: 35px Golos;
+        height: 50px;
+        width: 50px;
+        margin-top: 25px;
+    }
+    .menuin{
+        width: 80%;
+        right: 60%;
+        margin-top: 0px;
+    }
+    .menulink{
+        font: 20px Golos;
+        width: 210px;
+    }
+    .prldrlogo{
+        width: 400px;
+    }
+    .back{
+        top: -120%;
+    }
+    .h1art{
+        font: 40px Golos;
+    }
+    h2{
+        font: 12px Arial;
+    }
+    .text1{
+        margin-top: 20px;
+    }
+}

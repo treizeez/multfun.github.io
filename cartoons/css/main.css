@@ -1,0 +1,600 @@
+@font-face {
+    font-family: Golos;
+    src: url(../../fonts/Golos.ttf);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+  }
+html{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    outline: none;
+}
+body{
+    background: #5f27cd;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font: 45px Golos;
+    color: #fff;
+}
+h2{
+    font: 17px Arial;
+    color: #fff;
+}
+h3{
+    font: 35px Golos;
+    color: #fff;
+}
+.underheader{
+    position: fixed;
+    z-index: 998;
+    background: #44189c;
+    width: 100%;
+    height: 150px;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.logounder{
+    width: 400px;
+    margin: 10px;
+    margin-top: -43px;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.logounder:hover{
+    transform: scale(0.9, 0.9);
+}
+.logo{
+    width: 500px;
+    margin-top: -40px;
+    opacity: 1;
+}
+.logo:after{
+    opacity: 0;
+}
+#p_prldr{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 49.99%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #5f27cd;
+    z-index: 3000;
+}
+.contpre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.prldrlogo{
+    width: 600px;
+}
+.headimg{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/simpsons.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.afterheadimg{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-box-shadow: -2px -7px 30px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -7px 30px -11px rgba(0,0,0,0.75);
+    box-shadow: -2px -7px 30px -11px rgba(0,0,0,0.75);
+}
+.amenu{
+    font: 70px Golos;
+    float: right;
+    margin: 20px;
+    margin-top: 25px;
+    background: #5f27cd;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.amenu:hover{
+    transform: scale(0.9, 0.9);
+}
+.menu{
+    position: fixed;
+    z-index: 1100;
+    background: #5f27cd;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 210%;
+    opacity: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.menu:target{
+    left: 110%;
+    opacity: 1;
+}
+.amenu{
+    font: 70px Golos;
+    float: right;
+    margin: 20px;
+    margin-top: 25px;
+    background: #5f27cd;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.amenu:hover{
+    transform: scale(0.9, 0.9);
+}
+.menu{
+    position: fixed;
+    z-index: 1100;
+    background: #5f27cd;
+    height: 100%;
+    width: 100%;
+    top: 49.99%;
+    left: 210%;
+    opacity: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.menu:target{
+    left: 110%;
+    opacity: 1;
+}
+.background{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: -10%;
+}
+.menuin{
+    z-index: 2000;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background: #5f27cd;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.menulink{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    font: 40px Golos;
+    color: #fff;
+    background: #44189c;
+    max-width: 500px;
+    min-width: 0px;
+    padding: 20px;
+    border-radius: 50px;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+}
+.menulink:hover{
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.socialicon{
+    width: 30px;
+    margin: 10px;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.socialicon:hover{
+    transform: scale(1.2, 1.2);
+}
+.social{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: -80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #5f27cd;
+    z-index: 2300;
+}
+.back:target{
+    opacity: 1;
+    top: 49.99%;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.text1{
+    position: absolute;
+    display: block;
+    max-width: 800px;
+    min-width: 0px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+.h1text{
+    font: 25px Arial;
+}
+.h1art{
+    font: 90px Golos;
+}
+.heading{
+    font: 100px Golos;
+}
+.preview{
+    display: inline-block;
+    border: 10px solid #5f27cd;
+    border-radius: 50px 0px;
+    margin: 0px 50px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.backgroundtext{
+    width: 95%;
+    height: 65px;
+    border-radius: 50px;
+    background: #270a61;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.summary{
+    display: inline-block;
+    width: 50%;
+    font: 35px Arial;
+}
+.topin{
+    width: 100%;
+    height: auto;
+    background: #44189c;
+    -webkit-box-shadow: -2px -7px 30px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -7px 30px -11px rgba(0,0,0,0.75);
+    box-shadow: -2px -7px 30px -11px rgba(0,0,0,0.75);
+}
+.mult{
+    width: 100%;
+    height: 500px;
+}
+.cartoonblock{
+    overflow-x:hidden;
+    display: inline-block;
+    text-align: center;
+    background: #44189c;
+    border-radius: 50px;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    opacity: 1;
+    margin-top: 50px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.cartoonblock:hover{
+    transform: scale(0.9, 0.9);
+}
+.comments{
+    position: relative;
+    margin-top: 100px;
+    display: block;
+    color: #fff;
+    width: 95%;
+    z-index: 1;
+}
+.headfuturama{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/futurama.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headfg{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/familyguy.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headsp{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/southpark.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headram{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/rickandmorty.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headamericandad{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/americandad.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headdisenchantment{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/disenchantment.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headbrickleberry{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/brickleberry.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headclevelandshow{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/clevelandshow.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headinfinitytrain{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/infinitytrain.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headgravityfalls{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/gravityfalls.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headadventuretime{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/adventuretime.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headinvaderzim{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/invaderzim.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headstarvs{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/starvs.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headphineasandferb{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/phineasandferb.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headhilda{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/hilda.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headhazbin{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/hazbin.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headmilolaw{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/milolaw.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headamphibia{
+    width: 100%;
+    height: 300px;
+    background-image: url(../headers/amphibia.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@media screen and (max-width: 1140px) {
+    h1{
+        font: 30px Golos;
+    }
+    h3{
+        font: 30px Golos;
+    }
+    .logo{
+        width: 300px;
+        margin-top: -10px;
+    }
+    .underheader{
+        height: 100px;
+    }
+    .logounder{
+        width: 250px;
+        margin-top: -20px;
+    }
+    .amenu{
+        font: 35px Golos;
+        height: 50px;
+        width: 50px;
+    }
+    .menuin{
+        width: 80%;
+        right: 60%;
+        margin-top: 0px;
+    }
+    .menulink{
+        font: 20px Golos;
+        width: 210px;
+    }
+    .prldrlogo{
+        width: 400px;
+    }
+    .back{
+        top: -120%;
+    }
+    .h1art{
+        font: 40px Golos;
+    }
+    h2{
+        font: 12px Arial;
+    }
+    .text1{
+        margin-top: 20px;
+    }
+    .preview{
+        display: block;
+        margin-top: 40px;
+    }
+    .summary{
+        display: block;
+        font: 20px Arial;
+        width: 90%;
+    }
+    .backgroundtext{
+        height: 40px;
+    }
+    .preview{
+        width: 300px;
+    }
+    .heading{
+        font: 50px Golos;
+    }
+    .topin{
+        border-radius: 40px;
+    }
+}
