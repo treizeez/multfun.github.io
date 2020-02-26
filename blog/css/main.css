@@ -112,7 +112,7 @@ h3{
 .article{
     font: 90px Golos;
     margin-top: 80px;
-    background-image: url(../img/articlebackground.png);
+    background-image: url(../../img/articlebackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -130,7 +130,7 @@ h3{
 .article2{
     font: 90px Golos;
     margin-top: 80px;
-    background-image: url(../img/articlebackground2.png);
+    background-image: url(../../img/articlebackground2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
