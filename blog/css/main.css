@@ -375,7 +375,7 @@ h3{
 }
 @media screen and (max-width: 1140px) {
     h1{
-        font: 25px Golos;
+        font: 30px Golos;
     }
     h3{
         font: 30px Golos;
@@ -404,7 +404,7 @@ h3{
     }
     .article3{
         width: 95%;
-        font: 35px Golos;
+        font: 30px Golos;
     }
     .amenu{
         font: 35px Golos;
