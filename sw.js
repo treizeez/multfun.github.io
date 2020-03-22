@@ -1,36 +1,40 @@
-// This is the "Offline page" service worker
-
-// Install stage sets up the offline page in the cache and opens a new cache
-self.addEventListener('install', (event) => {
-  const offlinePage = new Request('offline.html', {
-    headers: { 'Content-Type': 'text/html' }
+var updated = [//тут указываем скрипты которые не должны жестко кешироваться
+  "https://multfun.tk/sw.js"//указал сам скрипт service worker, чтобы не кешировался жестко в будущем. Проверил. Оффлайн режим работает без него в этом кеше.
+  ];
+  const version = "0.0.7";//тут может быть номер вашей версии
+  const CACHE = "soltyk-cache" + version;//вместо soltyk - используйте свое уникальное название или доменное имя
+  self.addEventListener('install', function(event) {
+  var indexPage = new Request('index.html');
+  event.waitUntil(fetch(indexPage).then(function(response) {
+  var response2 = response.clone();
+  return caches.open(CACHE).then(function(cache) {
+  console.log('[PWA Builder] Cached index page during Install ' + response2.url);
+  return cache.put(indexPage, response2)
+  })
+  }))
   });
-  event.waitUntil(
-    fetch(offlinePage).then((response) => {
-      return caches.open('pwabuilder-offline').then((cache) => {
-        console.log('[PWA Builder] Cached offline page during install: ' + response.url);
-        return cache.put(offlinePage, response);
-      });
-    }));
-});
-
-// If any fetch for an html file fails, it will show the offline page.
-self.addEventListener('fetch', (event) => {
-  if (event.request.destination === "document") {
-    event.respondWith(
-      fetch(event.request).catch((error) => {
-        console.error('[PWA Builder] Network request Failed. Serving offline page. ' + error);
-        return caches.open('pwabuilder-offline').then((cache) => {
-          return cache.match('offline.html');
-        });
-      }));
+  self.addEventListener('fetch', function(event) {
+  var updateCache = function(request) {
+  return caches.open(CACHE).then(function(cache) {
+  return fetch(request).then(
+  function(response2 = response.clone()) {
+  if (updated.indexOf(response2.url) != -1){
+  console.log('Исключен из кеша ' + response2.url)
+  }else{
+  console.log('[PWA Builder] add page to offline ' + response2.url)
+  return cache.put(request.clone(), response2)
   }
-});
-
-// This is an event that can be fired from your page to tell the SW to update the offline page
-self.addEventListener('refreshOffline', (response) => {
-  return caches.open('pwabuilder-offline').then((cache) => {
-    console.log('[PWA Builder] Offline page updated from refreshOffline event: ' + response.url);
-    return cache.put(offlinePage, response);
-  });
-});
+  })
+  })
+  };
+  event.waitUntil(updateCache(event.request));
+  event.respondWith(fetch(event.request).catch(function(error) {
+  console.log('[PWA Builder] Network request Failed. Serving content from cache: ' + error);
+  return caches.open(CACHE).then(function(cache) {
+  return cache.match(event.request).then(function(matching) {
+  var report = !matching || matching.status == 404 ? Promise.reject('no-match') : matching;
+  return report
+  })
+  })
+  }))
+  })
