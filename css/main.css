@@ -11,6 +11,7 @@ html{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    overflow-x: hidden;
 }
 body{
     background: #5f27cd;
