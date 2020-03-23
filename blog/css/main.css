@@ -12,6 +12,7 @@ html{
     -webkit-user-select: none;
     user-select: none;
     outline: none;
+    overflow-x: hidden;
 }
 body{
     background: #5f27cd;
