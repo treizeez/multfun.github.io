@@ -30,29 +30,6 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             
             <link rel="manifest" href="manifest.json">
-            <script>
-                await page.setViewport({height, width});
-
-// Window frame - probably OS and WM dependent.
-height += 85;
-
-// Any tab.
-const {targetInfos: [{targetId}]} = await browser._connection.send(
-  'Target.getTargets'
-);
-
-// Tab window. 
-const {windowId} = await browser._connection.send(
-  'Browser.getWindowForTarget',
-  {targetId}
-);
-
-// Resize.
-await browser._connection.send('Browser.setWindowBounds', {
-  bounds: {height, width},
-  windowId
-});
-            </script>
   <script>
   if ("serviceWorker" in navigator) {
     if (navigator.serviceWorker.controller) {
