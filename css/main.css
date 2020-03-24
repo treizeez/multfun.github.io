@@ -332,7 +332,9 @@ h3{
         font: 35px Golos;
     }
     .amenu{
-        font: 30px Arial;
+        font: 35px Golos;
+        height: 50px;
+        width: 50px;
         margin-top: 25px;
     }
     .menuin{
@@ -341,7 +343,7 @@ h3{
         margin-top: 0px;
     }
     .menulink{
-        font: 20px Golos;
+        font: 20px Arial;
         width: 210px;
     }
     .prldrlogo{
