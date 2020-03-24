@@ -15,6 +15,7 @@
         }
     ],
     "start_url": "index.html",
+    "homepage": "https://multfun.tk/img",
     "display": "standalone",
     "theme_color": "#5f27cd",
     "background_color": "#5f27cd"
