@@ -224,9 +224,9 @@ h3{
     font: 35px Arial;
     color: #fff;
     background: #44189c;
-    max-width: 100%;
+    max-width: 500px;
     min-width: 0px;
-    padding: 20px;
+    padding: 0px 30px;
     border-radius: 25px;
     -o-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
