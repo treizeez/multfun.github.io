@@ -10,8 +10,8 @@
             "type": "image/png"
         },
         {
-            "src": "icons/apple.png",
-            "sizes": "192x192",
+            "src": "img/app.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
