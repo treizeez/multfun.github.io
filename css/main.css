@@ -14,7 +14,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: #5f27cd;
+    background: #130f40;
     margin: 0;
     padding: 0;
     right: 0;
@@ -27,7 +27,7 @@ body{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background: #5f27cd;
+    background: #130f40;
     z-index: 3000;
 }
 .contpre{
@@ -58,7 +58,7 @@ h3{
 }
 .header{
     position: relative;
-    background: #5f27cd;
+    background: #130f40;
     z-index: 999;
     width: 100%;
     height: 200px;
@@ -121,34 +121,34 @@ h3{
     transform: scale(0.9, 0.9);
 }
 .article{
-    font: 90px Golos;
+    font: 50px Golos;
     margin-top: 80px;
     background-image: url(../img/articlebackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    width: 98%;
+    width: 80%;
     height: auto;
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 20px;
     text-align: center;
     -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
     box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
 }
 .article2{
-    font: 90px Golos;
+    font: 50px Golos;
     margin-top: 80px;
     background-image: url(../img/articlebackground2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    width: 98%;
+    width: 80%;
     height: auto;
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 20px;
     text-align: center;
     -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
@@ -175,15 +175,21 @@ h3{
 .amenu:hover{
     transform: scale(0.9, 0.9);
 }
+@keyframes menuanimation {
+    from {margin: 0px 50px;}
+    to {margin-top: 0px;}
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 .menu{
     position: fixed;
+    display: none;
     z-index: 1100;
-    background: #5f27cd;
+    background: #130f40;
     height: 100%;
     width: 100%;
     top: 50%;
-    left: 210%;
-    opacity: 0;
+    left: 110%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     -o-transition: all 0.5s ease-in-out;
@@ -192,8 +198,8 @@ h3{
     transition: all 0.5s ease-in-out;
 }
 .menu:target{
-    left: 110%;
-    opacity: 1;
+    display: block;
+    animation: 0.2s menuanimation;
 }
 .background{
     position: absolute;
@@ -212,7 +218,7 @@ h3{
     position: absolute;
     width: 40%;
     height: 100%;
-    background: #5f27cd;
+    background: #130f40;
     -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
     box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
@@ -223,11 +229,11 @@ h3{
     display: block;
     font: 35px Arial;
     color: #fff;
-    background: #44189c;
+    background: #30336b;
     max-width: 500px;
     min-width: 0px;
     padding: 9px 50px;
-    border-radius: 25px;
+    border-radius: 15px;
     -o-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -235,9 +241,7 @@ h3{
     
 }
 .menulink:hover{
-    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
-    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    background: #535c68;
 }
 .ul{
     position: absolute;
@@ -246,25 +250,27 @@ h3{
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+@keyframes backanimation {
+    from {margin-top: 20px;}
+    to {margin-top: 0px;}
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 .back{
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    top: -80%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background: #5f27cd;
+    background: #130f40;
     z-index: 2300;
+    display: none;
 }
 .back:target{
-    opacity: 1;
-    top: 50%;
-    -o-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    display: block;
+    animation: 0.2s backanimation;
 }
 .text1{
     position: absolute;
