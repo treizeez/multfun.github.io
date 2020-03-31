@@ -14,7 +14,10 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: #130f40;
+    background-image: url(../img/bg.png);
+    background-size: 100px;
+    background-position: center center;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     right: 0;
@@ -115,7 +118,10 @@ h4{
     overflow-x:hidden;
     display: inline-block;
     text-align: center;
-    background: #130f40;
+    background-image: url(../img/bga.png);
+    background-size: 100px;
+    background-position: center center;
+    background-attachment: fixed;
     border-radius: 20px;
     width: 400px;
     height: auto;
@@ -133,14 +139,126 @@ h4{
 .cartoonblock:hover{
     transform: scale(0.9, 0.9);
 }
+.cartoonblock2{
+    overflow-x:hidden;
+    display: inline-block;
+    text-align: center;
+    background-image: url(../img/bgch.png);
+    background-size: 100px;
+    background-position: center center;
+    background-attachment: fixed;
+    border-radius: 20px;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    opacity: 1;
+    margin-top: 50px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.cartoonblock2:hover{
+    transform: scale(0.9, 0.9);
+}
+.cartoonblock3{
+    overflow-x:hidden;
+    display: inline-block;
+    text-align: center;
+    background: #130f40;
+    border-radius: 20px;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    opacity: 1;
+    margin-top: 50px;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.cartoonblock3:hover{
+    transform: scale(0.9, 0.9);
+}
+.inblock{
+    text-shadow: 
+    -0   -3px 0   #E67E22,
+     0   -3px 0   #E67E22,
+    -0    3px 0   #E67E22,
+     0    3px 0   #E67E22,
+    -3px -0   0   #E67E22,
+     3px -0   0   #E67E22,
+    -3px  0   0   #E67E22,
+     3px  0   0   #E67E22,
+    -1px -3px 0   #E67E22,
+     1px -3px 0   #E67E22,
+    -1px  3px 0   #E67E22,
+     1px  3px 0   #E67E22,
+    -3px -1px 0   #E67E22,
+     3px -1px 0   #E67E22,
+    -3px  1px 0   #E67E22,
+     3px  1px 0   #E67E22,
+    -2px -3px 0   #E67E22,
+     2px -3px 0   #E67E22,
+    -2px  3px 0   #E67E22,
+     2px  3px 0   #E67E22,
+    -3px -2px 0   #E67E22,
+     3px -2px 0   #E67E22,
+    -3px  2px 0   #E67E22,
+     3px  2px 0   #E67E22,
+    -3px -3px 0   #E67E22,
+     3px -3px 0   #E67E22,
+    -3px  3px 0   #E67E22,
+     3px  3px 0   #E67E22,
+    -3px -3px 0   #E67E22,
+     3px -3px 0   #E67E22,
+    -3px  3px 0   #E67E22,
+     3px  3px 0   #E67E22;
+}
+.inblock2{
+    text-shadow: 
+		-0   -3px 0   #27AE60,
+		 0   -3px 0   #27AE60,
+		-0    3px 0   #27AE60,
+		 0    3px 0   #27AE60,
+		-3px -0   0   #27AE60,
+		 3px -0   0   #27AE60,
+		-3px  0   0   #27AE60,
+		 3px  0   0   #27AE60,
+		-1px -3px 0   #27AE60,
+		 1px -3px 0   #27AE60,
+		-1px  3px 0   #27AE60,
+		 1px  3px 0   #27AE60,
+		-3px -1px 0   #27AE60,
+		 3px -1px 0   #27AE60,
+		-3px  1px 0   #27AE60,
+		 3px  1px 0   #27AE60,
+		-2px -3px 0   #27AE60,
+		 2px -3px 0   #27AE60,
+		-2px  3px 0   #27AE60,
+		 2px  3px 0   #27AE60,
+		-3px -2px 0   #27AE60,
+		 3px -2px 0   #27AE60,
+		-3px  2px 0   #27AE60,
+		 3px  2px 0   #27AE60,
+		-3px -3px 0   #27AE60,
+		 3px -3px 0   #27AE60,
+		-3px  3px 0   #27AE60,
+		 3px  3px 0   #27AE60,
+		-3px -3px 0   #27AE60,
+		 3px -3px 0   #27AE60,
+		-3px  3px 0   #27AE60,
+		 3px  3px 0   #27AE60;
+}
 .article{
     font: 50px Golos;
     margin-top: 80px;
-    background-image: url(../img/articlebackground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
     width: 80%;
     height: auto;
     padding: 10px;
@@ -158,6 +276,19 @@ h4{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.2);
+}
+.article4{
+    font: 50px Golos;
+    margin-top: 80px;
+    background: #5f27cd;
     width: 80%;
     height: auto;
     padding: 10px;
@@ -321,8 +452,8 @@ h4{
     transform: translate(-50%, -50%);
 }
 @keyframes mymove {
-    from {margin-top: 20px;}
-    to {margin-top: 10px;}
+    from {margin-top: 70px;}
+    to {margin-top: 50px;}
     from {opacity: 0;}
     to {opacity: 1;}
   }
@@ -346,7 +477,7 @@ h4{
     margin: -2px;
     text-align: center;
     color: #FFF;
-    background: #30336b;
+    background: #130f40;
     cursor: pointer;
     border-radius: 20px;
     outline: none;
@@ -364,7 +495,7 @@ h4{
 }
 .tabs>input:checked + label {
     color: #FFF;
-    background: #130f40;
+    background: #30336b;
 }
 .about{
     color: #747d8c;
@@ -382,7 +513,10 @@ h4{
 #tab_3:checked ~ #txt_3,
 #tab_4:checked ~ #txt_4 { 
     display: block;
+    background: #5f27cd;
+    border-radius: 20px;
     animation: mymove 0.5s;
+    margin-top: 50px;
 }
 @media screen and (max-width: 1140px) {
     h1{
