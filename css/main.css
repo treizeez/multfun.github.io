@@ -358,6 +358,9 @@ h4{
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    -webkit-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.3);
+    box-shadow: 1px 16px 29px 5px rgba(0,0,0,0.3);
 }
 .tabs>input:checked + label {
     color: #FFF;
@@ -389,9 +392,9 @@ h4{
         font: 30px Golos;
     }
     h4{
-        font: 12px Arial;
+        font: 15px Arial;
         font-weight: bold;
-        width: 100px;
+        width: 120px;
     }
     .logo{
         width: 300px;
