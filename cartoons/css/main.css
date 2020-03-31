@@ -23,6 +23,14 @@ body{
 }
 a{
     text-decoration: none;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+a:focus{
+    outline: none;
 }
 h1{
     font: 45px Golos;
