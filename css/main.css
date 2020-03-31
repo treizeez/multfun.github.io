@@ -44,6 +44,10 @@ a{
     text-decoration: none;
     outline: none;
     user-select: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 a:focus{
     outline: none;
