@@ -63,6 +63,12 @@ h3{
     font: 35px Golos;
     color: #fff;
 }
+h4{
+    font: 20px Arial;
+    font-weight: bold;
+    color: #fff;
+    width: 230px;
+}
 .header{
     position: relative;
     background: #130f40;
@@ -314,12 +320,78 @@ h3{
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+@keyframes mymove {
+    from {margin-top: 20px;}
+    to {margin-top: 10px;}
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes mymove2 {
+    from {margin-top: 2px;}
+    to {margin-top: -1px;}
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.tabs { width: 100%; padding: 0px; margin-top: 50px; }
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 12px;
+    background: transparent;
+    margin-top: 10px;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: -2px;
+    text-align: center;
+    color: #FFF;
+    background: #30336b;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.tabs>input:checked + label {
+    color: #FFF;
+    background: #130f40;
+}
+.about{
+    color: #747d8c;
+    max-width: 300px;
+    min-width: 0px;
+    text-align: left;
+    margin-top: 20px;
+}
+.next{
+    margin-top: 10px;
+    animation: mymove 0.5s;
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4 { 
+    display: block;
+    animation: mymove 0.5s;
+}
 @media screen and (max-width: 1140px) {
     h1{
         font: 30px Golos;
     }
     h3{
         font: 30px Golos;
+    }
+    h4{
+        font: 12px Arial;
+        font-weight: bold;
+        width: 100px;
     }
     .logo{
         width: 300px;

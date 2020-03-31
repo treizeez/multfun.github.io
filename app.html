@@ -1,6 +1,7 @@
 <!doctype html>
     <html>
         <head>
+            <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
             <link rel="canonical" href="https://multfun.tk"/>
             <link rel="apple-touch-icon" href="img/apple.png"> 
             <meta name="mobile-web-app-capable" content="yes">
@@ -116,6 +117,7 @@ async function install() {
                         <a href="blog/" class="menulink">Блог</a>
                         <a href="#about" class="menulink">Про сайт</a>
                         <a href="#copyright" class="menulink">Для правовласників</a>
+                        <a onclick="install()" class="menulink">Встановити додаток</a>
                         <div class="social">
                             <a href="https://www.youtube.com/channel/UC5v6CINdvCZ1wnbsgZGwfqg" target="_blank"><img src="img/youtube.png" class="socialicon"></a>
                             <a href="https://www.instagram.com/multfun_ua" target="_blank"><img src="img/instagram.png" class="socialicon"></a>
@@ -126,35 +128,39 @@ async function install() {
                 <a href="#back"><div class="background"></div></a>
             </div>
             <center>
-                <h1 class="article">Мультсеріали для дорослих
-                    <center>
-                        <a href="cartoons/simpsons"><div class="cartoonblock"><img src="img/posters/simpsons.png"><h1>Сімпсони</h1></div></a>
-                        <a href="cartoons/futurama"><div class="cartoonblock"><img src="img/posters/futurama.png"><h1>Футурама</h1></div></a>
-                        <a href="cartoons/familyguy"><div class="cartoonblock"><img src="img/posters/familyguy.png"><h1>Гріфіни</h1></div></a>
-                        <a href="cartoons/southpark"><div class="cartoonblock"><img src="img/posters/southpark.png"><h1>Південний Парк</h1></div></a>
-                        <a href="cartoons/rickandmorty"><div class="cartoonblock"><img src="img/posters/rickandmorty.png"><h1>Рік та Морті</h1></div></a>
-                        <a href="allcartoonsadult"><div class="cartoonblock"><img src="img/posters/othera.png"><h1>Інші мульти</h1></div></a>
-                    </center>
-                </h1>
-            </center>
-            <center>
-                <h1 class="article2">Мультсеріали для дітей
-                    <center>
-                        <a href="cartoons/infinitytrain/"><div class="cartoonblock"><img src="img/posters/infinitytrain.png"><h3>Нескінченний потяг</h3></div></a>
-                        <a href="cartoons/gravityfalls"><div class="cartoonblock"><img src="img/posters/gravityfalls.png"><h1>Гравіті Фоллз</h1></div></a>
-                        <a href="cartoons/adventuretime"><div class="cartoonblock"><img src="img/posters/adventuretime.png"><h1>Час Пригод</h1></div></a>
-                        <a href="cartoons/invaderzim"><div class="cartoonblock"><img src="img/posters/invaderzim.png"><h1>Завойовник Зім</h1></div></a>
-                        <a href="cartoons/starvs"><div class="cartoonblock"><img src="img/posters/starvs.png"><h3>Стар проти сил зла</h3></div></a>
-                        <a href="allcartoonschild/"><div class="cartoonblock"><img src="img/posters/otherc.png"><h1>Інші мульти</h1></div></a>
-                    </center>
-                </h1>
-            </center>
-            <center>
-                <h1 class="article2">Останнє у блозі
-                    <center>
-                        <a href="blog/post/multnews1"><div class="cartoonblock"><img src="blog/posts/4.png"><h3>Головне за тиждень</h3><h2 style="color: #ccc;">12.03.2020</h2></div></a>
-                    </center>
-                </h1>
+                <div class="article">
+                    <div class="tabs">
+                        <input type="radio" name="inset" value="" id="tab_1" checked>
+                        <label for="tab_1"><i class="fa fa-user" aria-hidden="true"></i><h4>Мультсеріали для дорослих</h4></label>
+                        <input type="radio" name="inset" value="" id="tab_2">
+                        <label for="tab_2"><i class="fa fa-eye" aria-hidden="true"></i><h4>Мультсеріали для дітей</h4></label>
+                        <div id="txt_1">
+                            <a href="cartoons/simpsons"><div class="cartoonblock"><img src="img/posters/simpsons.png"><h1>Сімпсони</h1></div></a>
+                            <a href="cartoons/futurama"><div class="cartoonblock"><img src="img/posters/futurama.png"><h1>Футурама</h1></div></a>
+                            <a href="cartoons/familyguy"><div class="cartoonblock"><img src="img/posters/familyguy.png"><h1>Гріфіни</h1></div></a>
+                            <a href="cartoons/southpark"><div class="cartoonblock"><img src="img/posters/southpark.png"><h1>Південний Парк</h1></div></a>
+                            <a href="cartoons/rickandmorty"><div class="cartoonblock"><img src="img/posters/rickandmorty.png"><h1>Рік та Морті</h1></div></a>
+                            <a href="cartoons/americandad"><div class="cartoonblock"><img src="img/posters/americandad.png"><h3>Американський тато</h3></div></a>
+                            <a href="cartoons/disenchantment"><div class="cartoonblock"><img src="img/posters/disenchantment.png"><h1>Розчарування</h1></div></a>
+                            <a href="cartoons/brickleberry"><div class="cartoonblock"><img src="img/posters/brickleberry.png"><h1>Бріклбері</h1></div></a>
+                            <a href="cartoons/clevelandshow"><div class="cartoonblock"><img src="img/posters/clevelandshow.png"><h1>Шоу Клівленда</h1></div></a>
+                            <a href="cartoons/hazbinhotel"><div class="cartoonblock"><img src="img/posters/hazbinhotel.png"><h1>Готель Газбін</h1></div></a>
+                            <a href="cartoons/bigmouth"><div class="cartoonblock"><img src="img/posters/bigmouth.png"><h1>Великий Рот</h1></div></a>
+                            <a href="cartoons/paradise"><div class="cartoonblock"><img src="img/posters/paradise.png"><h1>Поліція Парадайз</h1></div></a>
+                        </div>
+                        <div id="txt_2">
+                            <a href="cartoons/infinitytrain/"><div class="cartoonblock"><img src="img/posters/infinitytrain.png"><h3>Нескінченний потяг</h3></div></a>
+                            <a href="cartoons/gravityfalls"><div class="cartoonblock"><img src="img/posters/gravityfalls.png"><h1>Гравіті Фоллз</h1></div></a>
+                            <a href="cartoons/adventuretime"><div class="cartoonblock"><img src="img/posters/adventuretime.png"><h1>Час Пригод</h1></div></a>
+                            <a href="cartoons/invaderzim"><div class="cartoonblock"><img src="img/posters/invaderzim.png"><h1>Завойовник Зім</h1></div></a>
+                            <a href="cartoons/starvs"><div class="cartoonblock"><img src="img/posters/starvs.png"><h3>Стар проти сил зла</h3></div></a>
+                            <a href="cartoons/phineasandferb"><div class="cartoonblock"><img src="img/posters/phineasandferb.png"><h1>Фінеас і Ферб</h1></div></a>
+                            <a href="cartoons/hilda"><div class="cartoonblock"><img src="img/posters/hilda.png"><h1>Гільда</h1></div></a>
+                            <a href="cartoons/milolaw"><div class="cartoonblock"><img src="img/posters/milolaw.png"><h3>Закон Майло Мерфі</h3></div></a>
+                            <a href="cartoons/amphibia"><div class="cartoonblock"><img src="img/posters/amphibia.png"><h1>Амфібія</h1></div></a>
+                            <a href="cartoons/starwars"><div class="cartoonblock"><img src="img/posters/starwars.png"><h3>Війни Клонів</h3></div></a>
+                        </div>
+                </div>
             </center>
             <center>
                 <h1 class="article2">Контакти
