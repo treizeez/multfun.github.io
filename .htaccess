@@ -3,11 +3,6 @@ AddDefaultCharset utf-8
 #AddDefaultCharset koi8-u
 #AddDefaultCharset windows-1251
 
-## Файл индексного документа
-#DirectoryIndex index.shtml index.html index.htm index.php
-
-## Воспринимать файлы *.html как SSI
-#AddHandler server-parsed .html
 
 ## Включить парсинг SSI выражений в устаревшем формате
 #SSILegacyExprParser on
